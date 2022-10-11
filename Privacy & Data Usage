@@ -1,0 +1,55 @@
+WoTSTATS#5557 (697107653821726730) privacy policy & data usage statement.
+
+Wargaming token usage:
+
+  WoTSTATS collects certain data in order to provide OAuth authentication between Discord & World of Tanks in order to enable in-depth features.
+
+  Doing such, it utilises Wargaming.net OpenID, there is only one method to request a user token, so the fullsuite of access is granted every time.
+
+  Their confirmation page lists the following:
+  """Service will have access to your personal data including:
+        user name;
+        amount of gold, doubloons, credits and free experience;
+        premium account expiration date;
+        availability of associated phone number;
+        friend list and groups of contacts;
+        restricted clan information;
+        list of player's vehicles including rented;
+        details on destroyed vehicles;
+        personal missions progress and available personal reserves in World of Tanks.
+        Service will not have access to your email, password, and phone number."""
+
+  WoTSTATS stores the a user's token encrypted, many functions of the Wargaming API have become defunct over the years, such as the ability to check friends, or whether or
+  not there is a phone number on the profile.
+
+  The only 'action' WoTSTATS can take with the token is to activate clan boosters, all other functions are 'read-only' type commands.
+
+  The token is specifically invoked as above to activate clan boosters, check booster count, or retrieve credit/gold/bond/free XP totals upon a user invoking the /stats 
+  command with no targetted player name, thus returning their own results.
+  
+  Upon utilising the /dauth command, the internal record of a discord users' discord to wargaming ID & token is deleted from the internal database. 
+
+  WoTSTATS complies with Wargaming data deletion requests (where a user has requested Wargaming delete all their data) within 2 buisness days of recieving deletion requests.
+
+Discord data usage:
+
+  WoTSTATS logs commands that are run in order to facilitate error checking. This encapsulates the member who sent the command, and server it was sent in.
+  Where the developer is also in that server, it also logs the channel it was sent in.
+  
+  WoTSTATS stores a discord user's ID upon authentication, channel & role IDs upon use of the /setup_roles or /player_channel commands. And the owner, bot's inviter and guild 
+  when the bot is first added.
+  
+  The bot requests the following specific commands for the following reasons;
+    Manage Roles          - Enable functionality of the /setup_roles command
+    Manage Channels       - Enable functionality of the /player_channel command
+    View Audit Log        - Enable the bot find and message the person that invited the bot with a how-to for first setup.
+    Send Message          - Send messages
+    Embed Links           - Have links give previews such as in the /rchan response
+    Attach Files          - Enable sending of pictures, even within embeds such as the /chart command
+    Add Reactions         - To acknowledge certain length commands by adding a reaction to the queuing message
+    User External Emojis  - Allow the bot to use custom emotes in responses
+    
+Any futher questions, please contact me via the support server (http://ivork.com) 
+
+~ IVORK#0001 (140902977618706432)
+  
