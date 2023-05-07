@@ -27,7 +27,8 @@ Wargaming token usage:
   The token is specifically invoked as above to activate clan boosters, check booster count, or retrieve credit/gold/bond/free XP totals upon a user invoking the /stats 
   command with no targetted player name, thus returning their own results.
   
-  Upon utilising the /dauth command, the internal record of a discord users' discord to wargaming ID & token is deleted from the internal database. 
+  Upon utilising the /dauth command, the internal record of a discord users' discord to wargaming ID & token is deleted from the internal database but may persist in backups
+  for up to 7 days.
 
   WoTSTATS complies with Wargaming data deletion requests (where a user has requested Wargaming delete all their data) within 2 buisness days of recieving deletion requests.
 
